@@ -19,9 +19,9 @@ pkgdesc="The glacier music player"
 arch=('x86_64' 'aarch64')
 url="https://$_host/$_project/$_gitname#branch=$_branch"
 license=('LGPL-2.0-or-later')
-depends=('qt5-glacier-app-git' 'nemo-qml-plugin-settings-git' 'nemo-qml-plugin-thumbnailer' 'qt5-mpris-git')
+depends=('taglib' 'qt5-glacier-app-git' 'nemo-qml-plugin-settings-git' 'nemo-qml-plugin-thumbnailer' 'qt5-mpris-git')
 optdepends=()
-makedepends=('git' 'qt5-multimedia' 'taglib')
+makedepends=('git' 'qt5-multimedia')
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
 source=("${pkgname}::git+${url}")
